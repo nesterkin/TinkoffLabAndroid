@@ -1,19 +1,25 @@
 import java.util.Date;
 
-public class ApiResponse {
-    private String base;
-    private RateObject rates;
-    private Date date;
+class ApiResponse {
+    private String mBase;
+    private Date mDate;
+    private RateObject mRateObject;
 
-    public RateObject getRateApi() {
-        return this.rates;
+    public ApiResponse(String base, Date date, RateObject rateObject) {
+        mBase = base;
+        mDate = date;
+        mRateObject = rateObject;
     }
 
-    public String getBaseApi() {
-        return this.base;
+    String getBaseApi() {
+        return mBase;
     }
 
-    public Date getDateApi() {
-        return this.date;
+    Date getDateApi() {
+        return mDate;
+    }
+
+    RateObject getRateApi() {
+        return mRateObject;
     }
 }

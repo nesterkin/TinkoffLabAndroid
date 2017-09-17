@@ -1,17 +1,17 @@
-public class RateObject {
-    private String name;
-    private double rate;
+class RateObject {
+    private String mName;
+    private double mRate;
 
-    public RateObject(String name, double rate) {
-        this.name = name;
-        this.rate = rate;
+    RateObject(String name, double rate) {
+        mName = name;
+        mRate = rate;
     }
 
-    public double getRate() {
-        return this.rate;
+    double getRate() {
+        return mRate;
     }
 
-    public String getName() {
-        return this.name;
+    String getName() {
+        return mName;
     }
 }
